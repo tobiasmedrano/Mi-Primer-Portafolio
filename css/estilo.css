@@ -1,0 +1,268 @@
+:root{
+    --primary-color: #F2EFEA;
+    --secondary-color: #4F5D50;
+    --terceary-color: #B7A99A;
+    --text-color: #3A4A5A;
+    --background-color: #F5F1EB;
+}
+
+body {
+    font-family: San system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    margin: 0;
+    height: 100vh;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Navbar */
+
+
+.navbar {
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--terceary-color);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--secondary-color);
+}
+
+.navbar .logo .p-logo {
+    font-size: 15px;
+    margin-left: 10px;
+    color: black;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+
+}
+.navbar ul li {
+    margin-left: 20px;
+    padding: 10px 20px;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: var(--secondary-color);
+    font-weight: bold;
+}
+.navbar .link-contacto{
+    background-color: var(--primary-color);
+    color: wheat;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+/* HERO */
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.hero-container h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: var(--secondary-color);
+}
+
+.hero-container p{
+    padding-bottom: 15px;
+}
+
+.hero-info .contenedor-redes{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 25px;    
+}
+
+.contenedor-redes a {
+    color: var(--terceary-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.btn-info-container a{
+     background-color: var(--secondary-color);
+    color: #FFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+.hero-container img{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+/* EXPERIENCIA */
+
+.titulo-experiencia {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.experiencia-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.experiencia-info p{
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+.experiencia-info img{
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+/* PROYECTOS */
+
+.titulo-proyectos {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+
+.proyectos-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 30px;
+}
+
+.proyectos-info img {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+.proyectos-info p {
+    font-size: 18px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+.btn-proyecto-container a{
+    background-color: var(--secondary-color);
+    color: #FFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+/* CONTACTO */
+
+.titulo-contacto {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    color: var(--secondary-color);
+    text-decoration: underline;
+}
+.contacto-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contacto-info p {
+    font-size: 18px;
+    color: var(--text-color);
+}
+
+.formulario-contacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding-bottom: 30px;
+}
+.formulario-contacto input, .formulario-contacto textarea {
+    width: 300px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid var(--secondary-color);
+}
+
+.formulario-contacto button {
+    background-color: var(--secondary-color);
+    color: #FFFF;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.formulario-contacto .btn-form{
+    text-align: center;
+}
+
+.formulario-contacto button:hover {
+    background-color: var(--terceary-color);
+}
+
+/* FOOTER */
+
+footer {
+    margin-top: 50px;
+    background-color: var(--terceary-color);
+}
+.footer {
+    text-align: center;
+    padding: 20px;
+    color: var(--secondary-color);
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 15px;
+}
+
+.social-links a {
+    color: var(--secondary-color);
+    font-size: 24px;
+    transition: color 0.3s ease;
+}   
