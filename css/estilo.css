@@ -158,6 +158,14 @@ body {
     text-decoration: underline;
 }
 
+.proyectos-contenedor{
+    display: flex;
+    justify-content:space-around; 
+    gap: 30px;               
+    flex-wrap: wrap;         
+    padding: 40px;
+}
+
 .proyectos-info {
     display: flex;
     flex-direction: column;
