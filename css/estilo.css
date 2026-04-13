@@ -11,7 +11,6 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     margin: 0;
-    height: 100vh;
 }
 
 *{
@@ -24,13 +23,16 @@ body {
 
 
 .navbar {
-    position: sticky;
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
     background-color: var(--terceary-color);
 }
+
 
 .navbar .logo {
     font-size: 24px;
@@ -142,8 +144,8 @@ body {
     color: var(--text-color);
 }
 .experiencia-info img{
-    width: 500px;
-    height: 300px;
+    max-width: 50%;
+    height: auto;
     border-radius: 10px;
 }
 
@@ -175,8 +177,8 @@ body {
 }
 
 .proyectos-info img {
-    width: 500px;
-    height: 300px;
+    max-width: 50%;
+    height: auto;
     border-radius: 10px;
     padding-top: 20px;
     padding-bottom: 15px;
